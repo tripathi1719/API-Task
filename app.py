@@ -74,4 +74,6 @@ def calculate_delivery_cost():
     return jsonify({"minimum_cost": min_cost})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
+
